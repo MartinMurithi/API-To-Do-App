@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+}
+
+
+.all_tasks,.completed_tasks, .uncompleted_tasks{
+    height: auto;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    color: hsl(215, 51%, 70%);
+    
+}
+
+.all_tasks{
+    background-color: darkorchid;
+    color: white;
+}
+
+.completed_tasks{
+    background-color: blueviolet;
+    color: white;
+}
+
+.uncompleted_tasks{
+    background-color: brown;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+
+
+li{
+    padding: 10px;
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+/* 
+.uncompleted_tasks{
+    background-color: cadetblue;
+    height: auto;
+    padding: 20px;
+    margin-left: 15px;
+} */
