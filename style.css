@@ -17,10 +17,42 @@ h1{
     text-decoration: underline;
 }
 
+
+.show_uncompleted_tasks{
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show_completed_tasks{
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show_all_tasks{
+    background-color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -29,7 +61,6 @@ h1{
     padding: 20px;
     margin-left: 15px;
     border-radius: 20px;
-    color: hsl(215, 51%, 70%);
     
 }
 
@@ -46,6 +77,7 @@ h1{
 .uncompleted_tasks{
     background-color: brown;
     color: white;
+    margin-right: 15px;
 }
 ul{
     list-style-type: none;
@@ -62,10 +94,16 @@ h2{
 
 }
 
-/* 
-.uncompleted_tasks{
-    background-color: cadetblue;
-    height: auto;
-    padding: 20px;
-    margin-left: 15px;
-} */
+@media screen and (max-width: 900px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 80%;
+    }
+
+    .all_tasks,.completed_tasks, .uncompleted_tasks{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+  }
